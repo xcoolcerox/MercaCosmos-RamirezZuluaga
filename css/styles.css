@@ -329,9 +329,10 @@ main{
 }
 
 .card .card-body a:hover{
-    background-color: transparent;
-    border-color: #0e171f;
-    color: #0e171f;
+    background-color: white;
+    border-color: rgb(68, 7, 148);
+    color: rgb(68, 7, 148);
+    font-weight: bold;
 }
 
 .card .card-footer{
