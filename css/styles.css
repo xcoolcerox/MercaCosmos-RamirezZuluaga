@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat" , sans-serif;
+    background-image: url(https://www.xtrafondos.com/wallpapers/resized/estrellas-en-la-galaxia-4110.jpg?s=large);
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Menú */
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 250px;
+    margin-left: 20px;
+}
+
+.bar-btn{
+    font-size: 25px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background-color: rgba(0, 0, 0, 0.95);
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover{
+    color: rgb(68, 7, 148);
+    transition: .3s;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-menu{
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li{
+    display: block;
+}
+
+
+/* banner text */
+
+.banner-text{
+    padding: 0 30px;
+    margin-top: 150px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-text h3{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.banner-text span{
+    color: rgb(68, 7, 148);
+}
+
+.banner-text h2{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.button1{
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: rgb(68, 7, 148);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.button1:hover{
+    background-color: #fff;
+    color: rgb(68, 7, 148);
+    transition: .5s;
+}
+
+.button2{
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: rgb(68, 7, 148);
+    border-radius: 5px;
+}
+
+.button2:hover{
+    background-color: rgb(68, 7, 148);
+    color: #fff;
+    transition: .5s;
+}
+
+/* banner text 1 */
+
+.banner-text1{
+    background-image: url(https://images.pexels.com/photos/3601453/pexels-photo-3601453.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0 30px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-text1 h3{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.banner-text1 span{
+    color: rgb(255, 238, 0);
+}
+
+.banner-text1 h2{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.button1-1{
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: rgb(68, 7, 148);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.button1-1:hover{
+    background-color: #fff;
+    color: rgb(68, 7, 148);
+    transition: .5s;
+}
+
+
+/* banner text 2 */
+
+.banner-text2{
+    background-image: url(https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0 30px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-text2 h3{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.banner-text2 span{
+    color: rgb(0, 255, 255);
+}
+
+.banner-text2 h2{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.button1-3{
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: rgb(68, 7, 148);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.button1-3:hover{
+    background-color: #fff;
+    color: rgb(68, 7, 148);
+    transition: .5s;
+}
+
+
+/* responsive para desktop */
+
+@media screen and (min-width: 860px){
+    .logo{
+        margin-left: 50px;
+    }
+
+    nav{
+        height: 100px;
+    }
+
+    .bar-btn{
+        display: none;
+    }
+
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-menu li a{
+        font-size: 12px;
+    }
+
+    .banner-text h3{
+        font-size: 70px;
+        margin-bottom: 30px;
+    }
+
+    .banner-text h2{
+        font-size: 20px;
+    }
+}
+
+/* Main-carta de productos*/
+
+main{
+    padding: 0;
+    margin: 0;
+    color: #fafbff;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.card-section{
+    display: grid;
+    gap: 1.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.card{
+    background-image: url(/img/fondo.jpg);
+    padding: 1.75rem;
+    border-radius: 1.75rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card .card-header{
+    text-align: center;
+    flex-basis: 100%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.card .card-body{
+    flex-basis: 100%;
+    margin-top: 1.2rem;
+}
+
+.card .card-body p{
+    text-align: center;
+    margin: 0;
+}
+
+.card .card-body a{
+    text-decoration: none;
+    color: #fafbff;
+    display: inline-flex;
+    padding: 0.7rem 1.75rem;
+    border: 1px solid transparent;
+    background-color: #0e171f;
+    border-radius: 1.75rem;
+    margin-top: 1.2rem;
+    transition: background-color 0.4s ease-in, color 0.4s ease-in;
+}
+
+.card .card-body a:hover{
+    background-color: transparent;
+    border-color: #0e171f;
+    color: #0e171f;
+}
+
+.card .card-footer{
+    flex-basis: 100%;
+    align-self: flex-end;
+    text-align: end;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: rgb(68, 7, 148);
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: black;
+}
+.pie-pagina .grupo-2{
+  
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
